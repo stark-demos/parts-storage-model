@@ -28,4 +28,11 @@ public class InventoryReservationRequestTest {
         assertEquals("ABC-abc-123", irr.getRepairRequestId());
     }
 
+    @Test
+    public void testBranchCode() {
+        InventoryReservationRequest irr = new InventoryReservationRequest();
+        irr.setBranchCode("ABC-abc-123");
+        assertEquals("ABC-abc-123", irr.getBranchCode());
+    }
+
 }

@@ -4,6 +4,7 @@ public class InventoryReservationRequest {
     private String partCode;
     private Integer quantity;
     private String repairRequestId;
+    private String branchCode;
 
     public String getPartCode() {
         return partCode;
@@ -29,9 +30,17 @@ public class InventoryReservationRequest {
         this.repairRequestId = repairRequestId;
     }
 
+    public String getBranchCode() {
+        return branchCode;
+    }
+
+    public void setBranchCode(String branchCode) {
+        this.branchCode = branchCode;
+    }
+
     @Override
     public String toString() {
         return "[InventoryReservationRequest]: partCode: " + getPartCode() + ", repairRequestId: "
-                + getRepairRequestId() + ", quantity: " + getQuantity();
+                + getRepairRequestId() + ", quantity: " + getQuantity() + ", branchCode: " + getBranchCode();
     }
 }
